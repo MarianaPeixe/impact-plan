@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "title": "No Poverty",
+    "description": "End poverty in all its forms everywhere.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384618/ODS01_cekkmy.svg"
+  },
+  {
+    "id": 2,
+    "title": "Zero Hunger",
+    "description": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384617/ODS02_ezrtjx.svg"
+  },
+  {
+    "id": 3,
+    "title": "Good Health and Well-being",
+    "description": "Ensure healthy lives and promote well-being for all at all ages.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384617/ODS03_fxetb2.svg"
+  },
+  {
+    "id": 4,
+    "title": "Quality Education",
+    "description": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384616/ODS04_jru4ad.svg"
+  },
+  {
+    "id": 5,
+    "title": "Gender Equality",
+    "description": "Achieve gender equality and empower all women and girls.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384616/ODS05_wvndnr.svg"
+  },
+  {
+    "id": 6,
+    "title": "Clean Water and Sanitation",
+    "description": "Ensure availability and sustainable management of water and sanitation for all.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384615/ODS06_lycw2m.svg"
+  },
+  {
+    "id": 7,
+    "title": "Affordable and Clean Energy",
+    "description": "Ensure access to affordable, reliable, sustainable and modern energy for all.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384615/ODS07_neohmz.svg"
+  },
+  {
+    "id": 8,
+    "title": "Decent Work and Economic Growth",
+    "description": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384614/ODS08_r9kif8.svg"
+  },
+  {
+    "id": 9,
+    "title": "Industry, Innovation and Infrastructure",
+    "description": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384614/ODS09_ywvp38.svg"
+  },
+  {
+    "id": 10,
+    "title": "Reduced Inequality",
+    "description": "Reduce inequality within and among countries.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384614/ODS10_w72hpn.svg"
+  },
+  {
+    "id": 11,
+    "title": "Sustainable Cities and Communities",
+    "description": "Make cities and human settlements inclusive, safe, resilient and sustainable.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384614/ODS11_yrzkcy.svg"
+  },
+  {
+    "id": 12,
+    "title": "Responsible Consumption and Production",
+    "description": "Ensure sustainable consumption and production patterns.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384613/ODS12_wvhti8.svg"
+  },
+  {
+    "id": 13,
+    "title": "Climate Action",
+    "description": "Take urgent action to combat climate change and its impacts.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384613/ODS13_tuqboa.svg"
+  },
+  {
+    "id": 14,
+    "title": "Life Below Water",
+    "description": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384613/ODS13_tuqboa.svg"
+  },
+  {
+    "id": 15,
+    "title": "Life on Land",
+    "description": "Protect, restore and promote sustainable use of terrestrial ecosystems, manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384612/ODS15_wbfm5v.svg"
+  },
+  {
+    "id": 16,
+    "title": "Peace, Justice and Strong Institutions",
+    "description": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384612/ODS16_skpmap.svg"
+  },
+  {
+    "id": 17,
+    "title": "Partnerships for the Goals",
+    "description": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1751384612/ODS17_auwukd.svg"
+  }
+]

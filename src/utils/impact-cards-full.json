@@ -1,0 +1,338 @@
+[
+  {
+    "category": "Learning",
+    "subcategory": "Wellbeing",
+    "title": "Personal Activities",
+    "descriptors": [
+      "Practicing physical activity",
+      "Dedicating time to hobbies",
+      "Cleaning the house",
+      "Volunteering to causes",
+      "Following group commitments (religious, scouts, associations)",
+      "Reading or solving quizes/puzzles",
+      "Watching films/series/tv",
+      "Attending events (shows, gigs, exhibitions, etc.)",
+      "Changing established habits"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696669/carta-learning-personal_bqlmu6.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Wellbeing",
+    "title": "Expenses & Risks *",
+    "descriptors": [
+      "Attending complementary workshops or training",
+      "Travelling to collect data or present results",
+      "Purchasing equipment and/or materials",
+      "Issuing an insurance",
+      "Paying for space allocation (exhibitions, focus groups, etc.)",
+      "Paying honoraries to third parties involved",
+      "Exposing to geographically unstable regions",
+      "Interacting with disturbed/violent individuals",
+      "Obtaining accredited documents or clearance",
+      "* Higher costs and risks should be marked with lower impact scores"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696667/carta-learning-exp_gx6dpq.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Wellbeing",
+    "title": "Loved Ones & Privacy *",
+    "descriptors": [
+      "Meeting up with friends",
+      "Spending time with my family/partner",
+      "Eating healthily and regularly",
+      "Sleeping properly",
+      "Taking time to relax and deep breathing",
+      "Looking after myself (e.g. health check-up)",
+      "* Less time for important/Meaningful activities should be marked with lower impact scores"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696669/carta-learning-loved_rag00q.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Development",
+    "title": "Effective Communication",
+    "descriptors": [
+      "Improving active listening skills",
+      "Consistently interpreting and using non-verbal communication",
+      "Articulating follow-up questions",
+      "Creating concise verbal and visual messages",
+      "Adapting the tone of voice to the audience",
+      "Selecting/adapting means of comm. according to the context",
+      "Defining and developing a personal brand",
+      "Understanding accessibility and usability",
+      "Recognising the boundaries of digital social isolation"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696664/carta-learning-communication_oc5gto.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Development",
+    "title": "Information Literacy",
+    "descriptors": [
+      "Recognising and articulating a need for information",
+      "Distinguishing ways in which said need may be addressed",
+      "Constructing strategies for locating information",
+      "Locating and accessing information",
+      "Assessing information obtained from different sources",
+      "Using information appropriately and ethicaly",
+      "Creating usable information from raw data",
+      "Understanding multisensory perceptions of information",
+      "Publishing (e.g. blogging, directing) relevant information",
+      "Categorising and analysing information",
+      "Understanding the basics of digital data compliance"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696669/carta-learning-info_fqv6f3.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Development",
+    "title": "Problem Solving",
+    "descriptors": [
+      "Understanding complexity",
+      "Developing imagination and empathy",
+      "Generating alternatives and scenarios",
+      "Getting to know decision-making processes/tools",
+      "Developing project management skills",
+      "Understanding and implementing Design Thinking",
+      "Develop research skills",
+      "Improving analytical thinking",
+      "Developing my leadership potential"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696667/carta-learning-prob_whakos.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Development",
+    "title": "Strategic Thinking",
+    "descriptors": [
+      "Prioritising tasks",
+      "Being aware of biases",
+      "Identifying risks",
+      "Defining syrnergies",
+      "Improving listening skills",
+      "Refining questioning skills",
+      "Understanding causality and consequenciality",
+      "Understanding group dynamics",
+      "Defining pragmatic and realistic objectives",
+      "Identifying contexts and ecosystems"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696669/carta-learning-strat_fdohxa.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Development",
+    "title": "Creativity",
+    "descriptors": [
+      "Building confidence in my ideas",
+      "Overcoming negativism",
+      "Realising that most problems have multiple solutions",
+      "Understanding stereotypes and mental blocks",
+      "Engaging with sensorial representations of information",
+      "Looking for sources of inspiration",
+      "Developing imagination and desire",
+      "Speculating and creating alternative, unusual scenarios",
+      "Developing cultural awareness",
+      "Fighting the “Not-Invented-Here” syndrome",
+      "Questioning the status quo and changing things",
+      "Prototyping, trying, making"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696667/carta-learning-creativity_jdi6yr.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Development",
+    "title": "Ethical & Moral Awareness",
+    "descriptors": [
+      "Identifying ethical and moral dilemmas",
+      "Understanding and assessing ethical values and principles",
+      "Examining the implications of acts for the lives of others",
+      "Understanding deontology, authenticity and transparency",
+      "Familiarising with diversity, inclusivity and equality",
+      "Recognising biases (conscious and unconscious)"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696670/carta-learning-ethic_nf9l4d.svg"
+  },
+  {
+    "category": "Learning",
+    "subcategory": "Development",
+    "title": "Pluridisciplinarity",
+    "descriptors": [
+      "Identifying adjacent/different relevant disciplines",
+      "Identifying real-world complex issues",
+      "Understanding approaches and interventions holistically",
+      "Realising the contribution of different domains to the same issue",
+      "Engaging with Design Thinking methods and practices",
+      "Coordinating with others",
+      "Refining negotiation and persuasion skills",
+      "Understanding the boundaries of different domains",
+      "Creating comprehensive research questions",
+      "Developing concensual definitions and guidelines"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696669/carta-learning-pluri_xzhd6m.svg"
+  },
+  {
+    "category": "Career",
+    "subcategory": "Development",
+    "title": "Influence & Legitimacy",
+    "descriptors": [
+      "Building connections and hubs",
+      "Learning to listen",
+      "Learning persuasion techniques",
+      "Developing expertise and know-how",
+      "Mapping power structures",
+      "Getting to know stakeholders’ needs, perspectives and interests",
+      "Developing leadership competencies",
+      "Understanding honesty and authenticity",
+      "Developing accountability for others",
+      "Developing emotional intelligence",
+      "Cultivate co-operative and collaborative working habits",
+      "Defining decision-making processes"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696667/carta-career-influence_nrqcpb.svg"
+  },
+  {
+    "category": "Career",
+    "subcategory": "Development",
+    "title": "Change in Career Path",
+    "descriptors": [
+      "Evaluating current job satisfaction",
+      "Assessing my interests and skills",
+      "Considering alternative professions",
+      "Reaching out for interviews",
+      "Developing my CV and applying for jobs",
+      "Setting up a job shadowing",
+      "Volunteering in a new field",
+      "Upgrading my specialisation",
+      "Assessing the benefits of changing job (fulfilment, salary, work-life balance)",
+      "Building confidence in my career options",
+      "Understanding psychometric tests used in recruitment"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696629/carta-career-change_mrrb1o.svg"
+  },
+  {
+    "category": "Career",
+    "subcategory": "Development",
+    "title": "Entrepreneurship",
+    "descriptors": [
+      "Attending an entrepreneurship course",
+      "Identifying the right team to ensure the essential business activities",
+      "Listing incubators and arrange a meeting with directors/managers",
+      "Getting initial funding via FFF round (Family, Friends and Fools)",
+      "Preparing an elevator pitch",
+      "Getting to know businesses’ legal and financial aspects",
+      "Creating, designing and registering a brand",
+      "Building a customer base",
+      "Defining how and what to communicate",
+      "Identifying the supply and distribution chains",
+      "Completing a Business Model Canvas and a Business Plan",
+      "Identifying interesting possible investors"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696663/carta-career-entre_gmdjso.svg"
+  },
+  {
+    "category": "Career",
+    "subcategory": "Development",
+    "title": "Promotion & Salary",
+    "descriptors": [
+      "Knowing my worth in the job market",
+      "Providing evidence of my value",
+      "Learning to deal with rejection",
+      "Refining the art of negotiation",
+      "Building a case for promotion",
+      "Evaluating the compromises attached to a raise (pains and gains)",
+      "Assessing my real needs/values",
+      "Refining my emotional agility and resilience"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696667/carta-career-promo_uqxzao.svg"
+  },
+  {
+    "category": "Career",
+    "subcategory": "Development",
+    "title": "Self & Loved Ones *",
+    "descriptors": [
+      "Spending time with the meaningful/loved ones",
+      "Eating healthily and regularly",
+      "Commuting to and from work",
+      "Sleeping properly",
+      "Taking time to relax",
+      "Practising physical activity",
+      "Dedicating time to hobbies and other social/cultural commitments",
+      "Reading and watching TV/series/films",
+      "Attending events (cultural, entertainment, professional)",
+      "Changing established habits/vices",
+      "* Less time and higher costs for meaningful activities should be marked with lower impact scores"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696666/carta-career-self_a5lg6u.svg"
+  },
+  {
+    "category": "Economic",
+    "title": "Developing Investment",
+    "descriptors": [
+      "Education",
+      "Infrastruture and Transport",
+      "Design",
+      "Data and Information",
+      "Technology",
+      "Communication and Media",
+      "Employment",
+      "Housing",
+      "Businesses and Marketing",
+      "Finance and Tax",
+      "Entertainment and Tourism",
+      "Health and Wellbeing"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696664/carta-economic_ubqvhz.svg"
+  },
+  {
+    "category": "Environmental",
+    "title": "Planet & Species",
+    "descriptors": [
+      "Reducing pollution and emissions",
+      "Decreasing waste",
+      "Contributing to the circularity of resources",
+      "Advancing neutral technologies",
+      "Mending climate conditions",
+      "Developing natural products",
+      "Balancing natural resources",
+      "Changing nutrition habits",
+      "Advancing/adopting renewable energies",
+      "Protecting and expanding animal rights"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696664/carta-environmental_khrhe7.svg"
+  },
+  {
+    "category": "Social",
+    "title": "Advanced Society",
+    "descriptors": [
+      "Developing citizenship",
+      "Designing education systems for all",
+      "Changing health and hygiene",
+      "Adjusting law and regulations",
+      "Enhancing culture",
+      "Rethinking structures of benefits",
+      "Adapting social behaviours to critical conditions"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696664/carta-social-ad_bo0h6o.svg"
+  },
+  {
+    "category": "Social",
+    "title": "Universal Communities",
+    "descriptors": [
+      "Improving:",
+      "Accessibility and inclusivity",
+      "Gender and racial equality",
+      "Mobility",
+      "Empowerment of minorities",
+      "Parenthood and family",
+      "Work conditions/wellbeing",
+      "Quality in ageing",
+      "Quality in disability",
+      "Quality in disease or chronic condition",
+      "Respect toward ethnicity and religion",
+      "Awareness toward sexual orientation"
+    ],
+    "imageUrl": "https://res.cloudinary.com/dn96pbsq9/image/upload/v1750696664/carta-social-com_l9enfl.svg"
+  }
+]
