@@ -19,16 +19,16 @@ function App() {
   return (
       <AuthContext>
         <Routes>
-          <Route path='/' element={<HomeP />} />
-          <Route path='login' element={<LoginP />} />
+          <Route path='/' element={<HomeP/>} />
+          <Route path='login' element={<LoginP/>} />
           <Route path='register' element={<Register/>}/>
           <Route path='cards' element={<Cards/>}/>
 
           <Route path='ip' element={<MainPage/>}>
-            <Route index element={<Plans/>} />
-            <Route path='plans' element={<Protected><Plans /></Protected>} />
-            <Route path='plandetails/:planId' element={<Protected><PlanDetail /></Protected>}/> 
-            <Route path='canvas/:planId/:projectIndex' element={<Protected><Canvas /></Protected>}/> 
+            <Route index element={<Plans/>}/>
+            <Route path='plans' element={<Protected><Plans/></Protected>}/>
+            <Route path='plandetails/:planId' element={<Protected><PlanDetail/></Protected>}/> 
+            <Route path='canvas/:planId/:projectIndex' element={<Protected><Canvas/></Protected>}/> 
           </Route>
           
           

@@ -4,6 +4,9 @@ import imgIntro from './imgs/imgIntro.svg';
 import { Link } from 'react-router-dom';
 import HomeCarousel from './HomeCarrossel';
 
+
+import ImportarOds from './ImportarOds';
+
 function HomeP(){
     return (
     <div className="App">
@@ -24,7 +27,7 @@ function HomeP(){
 
     <article class="container">
         <div class="row my-5 pt-5">
-            <div class="col-6 mt-3">
+            <div class="col-12 col-lg-6 my-5">
                 <h1>When desire means design.</h1>
                 <p class="subtitulos">Unlock your potential, develop your best self, and make the world a better place.</p>
                 <p class="mb-0">The Impact Plan helps you turn your ideas into meaningful action.</p> 
@@ -35,19 +38,24 @@ function HomeP(){
                 </Link>
             </div>
 
-            <div class="col-6 mt-3 text-center align-self-center">
-                <img src={imgIntro} alt="image with the differente scenarios of impact"/>
+            <div class="col-12 col-lg-6 mt-3 text-center align-self-center my-5">
+                <img src={imgIntro} className='img-fluid' alt="image with the different scenarios of impact"/>
             </div>
         </div>
     </article>
 
-    <article class="container-fluid fundoVerde text-center">
+    <article class="container-fluid fundoVerde text-center py-5">
         <div class="container">
             <h2 class="pt-5">Don’t know where to start?</h2>
             <p class="pArticle2 py-5">We’ll help!</p>
-            <iframe class="pb-5" width="1129px" height="661px"
-                src="https://www.youtube.com/embed/Dvl9jb92U1s?si=2jac095vJG63z-Kg">
-            </iframe>
+            <div className='ratio ratio-16x9 mb-5'>
+                <iframe
+                    src="https://www.youtube.com/embed/Dvl9jb92U1s?si=2jac095vJG63z-Kg"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen>                
+                </iframe>
+            </div>
         </div>
     </article>
 
@@ -95,7 +103,7 @@ function HomeP(){
         </ul> 
         <p class="col-md-4 mb-0 text-end text-body-secondary justify-content-end footerCred">© Photo, Inc. 2019. We love our users!</p> 
     </footer>
-    
+    <ImportarOds></ImportarOds>
     </div>
     )
 }

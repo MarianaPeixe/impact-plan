@@ -7,7 +7,7 @@ export function Protected({ children }) {
 
   if (!user) {
     return (
-      <div className="centro altura bglight">
+      <div className="centro altura">
         <h2 className="text-center">
           Access Restricted. Please log in to continue.
         </h2>

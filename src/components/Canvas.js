@@ -37,6 +37,7 @@ function Canvas() {
     const [redoStack, setRedoStack] = useState([]); // Para armazenar as ações que podem ser refeitas
     const [stickyNoteMode, setStickyNoteMode] = useState(false); // Novo estado para o modo de notas
     const [notes, setNotes] = useState([]);
+    const [selectedDescriptorId, setSelectedDescriptorId] = useState(null);
 
     // Load sticky notes do Firestore
     useEffect(() => {
@@ -98,7 +99,7 @@ function Canvas() {
      
     const fixedOrder = ["Learning", "Career", "Economic", "Environmental", "Social"];
 
-    //coloca um aordem fixa nos cenários que foram filtrados
+    //coloca um ordem fixa nos cenários que foram filtrados
     const sortedSetActiveScenarios = (selected) => {
         if (selected.length === 0) {
             setActiveScenarios(fixedOrder);
@@ -213,6 +214,31 @@ function Canvas() {
 
     const handleDescriptorClick = (id) => {
         if (!linkMode) return;
+
+        // Check if a connection involving this descriptor already exists
+        const existingConnectionIndex = connections.findIndex(conn => conn.start === id || conn.end === id);
+
+        if (existingConnectionIndex !== -1) {
+            // If connection exists, remove it (toggle off)
+            setConnections(prev => {
+                const newConnections = [...prev];
+                newConnections.splice(existingConnectionIndex, 1);
+                return newConnections;
+            });
+            setSelectedDescriptorId(null);
+        } else {
+            // If no connection exists, create a new connection
+            // For simplicity, connect to the last clicked descriptor or store the first click
+            // Here, we implement a simple toggle between two clicks to create a connection
+
+            if (!selectedDescriptorId) {
+                setSelectedDescriptorId(id);
+            } else {
+                // Create connection between selectedDescriptorId and current id
+                setConnections(prev => [...prev, { start: selectedDescriptorId, end: id }]);
+                setSelectedDescriptorId(null);
+            }
+        }
     };
 
     const saveConnectionsToFirestore = async () => {
@@ -402,10 +428,10 @@ function Canvas() {
                                         {highImpactDescriptors[scenario]?.plus.slice(0, 3).map((desc, idx) => {
                                             const id = `plus-${scenario}-${idx}`;
                                             return (
-                                                <li key={id} id={id} className="d-flex align-items-start mb-1 atividadesBorda" onClick={() => handleDescriptorClick(id)} style={{ cursor: linkMode ? 'pointer' : 'default' }}>
-                                                    <img src={Happy} alt="+2" className="me-2" />
-                                                    <span className="small">{desc}</span>
-                                                </li>
+                                                    <li key={id} id={id} className={`d-flex align-items-start p-1 mb-1 atividadesBorda ${selectedDescriptorId === id ? 'selected-descriptor' : ''}`} onClick={() => handleDescriptorClick(id)} style={{ cursor: linkMode ? 'pointer' : 'default', border: selectedDescriptorId === id ? '2px solid blue' : 'none', borderRadius: selectedDescriptorId === id ? '5px' : 'none', paddingLeft: selectedDescriptorId === id ? '4px' : '0' }}>
+                                                        <img src={Happy} alt="+2" className="me-2" />
+                                                        <span className="small">{desc}</span>
+                                                    </li>
                                             );
                                         })}
                                     </ul>
@@ -413,10 +439,10 @@ function Canvas() {
                                         {highImpactDescriptors[scenario]?.minus.slice(0, 3).map((desc, idx) => {
                                             const id = `minus-${scenario}-${idx}`;
                                             return (
-                                                <li key={id} id={id} className="d-flex align-items-start mb-1 atividadesBorda" onClick={() => handleDescriptorClick(id)} style={{ cursor: linkMode ? 'pointer' : 'default' }}>
-                                                    <img src={Sad} alt="-2" className="me-2" />
-                                                    <span className="small">{desc}</span>
-                                                </li>
+                                                    <li key={id} id={id} className={`d-flex align-items-start p-1 mb-1 atividadesBorda ${selectedDescriptorId === id ? 'selected-descriptor' : ''}`} onClick={() => handleDescriptorClick(id)} style={{ cursor: linkMode ? 'pointer' : 'default', border: selectedDescriptorId === id ? '2px solid blue' : 'none', borderRadius: selectedDescriptorId === id ? '5px' : 'none', paddingLeft: selectedDescriptorId === id ? '4px' : '0' }}>
+                                                        <img src={Sad} alt="-2" className="me-2" />
+                                                        <span className="small">{desc}</span>
+                                                    </li>
                                             );
                                         })}
                                     </ul>

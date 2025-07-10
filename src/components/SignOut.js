@@ -2,7 +2,7 @@ import { signOut, getAuth } from "firebase/auth";
 
 import logoutIcon from './imgs/Nav/logout.svg';
 
-//fazer signou/logout da ferramenta
+//fazer signout/logout da ferramenta
 function SignOut(){
     const auth = getAuth();
     async function handleSignOut() {

@@ -5,10 +5,11 @@ import Col from 'react-bootstrap/Col';
 import {Link} from 'react-router-dom';
 
 import {Context} from '../context/AuthContext';
-import {useContext} from 'react';
+import {useContext, useState} from 'react';
 import {Navigate} from 'react-router-dom';
 
 import SignIn from './SignIn';
+import { loginWithEmail } from '../utils/firebase.utils';
 
 import helloimg from './imgs/hello.svg';
 import logoIP from './imgs/logo.svg';
@@ -17,6 +18,28 @@ import logoIP from './imgs/logo.svg';
 
 function LoginP(){
     const { user, loading } = useContext(Context);
+
+    const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+    });
+    const [error, setError] = useState('');
+
+    const handleChange = (e) => {
+    setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+    });
+    };
+
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+        await loginWithEmail(formData.email, formData.password);
+    } catch (err) {
+        setError('Invalid email or password.');
+    }
+    };
 
     if (!loading && user) {
         return <Navigate to="/ip/plans" replace />;
@@ -33,37 +56,39 @@ function LoginP(){
                 </div> 
             </header>
         
-        <Container>
-                <Row className=''>
-                    <Col xs={6} className=''>
+        <Container fluid className=''>
+                <Row className='justify-content-around align-items-center'>
+                    <Col xs={12} md={6} lg={5} className='d-md-block d-none'>
                         <Col className='text-center'>
-                            <img src={helloimg} alt='Hello, welcome back!' />
+                            <img src={helloimg} alt='Hello, welcome back!' className='img-fluid'/>
                         </Col>
                     </Col>
 
-                    <Col xs={6}>
+                    <Col xs={12} md={6} lg={5} className='px-5'>
                         {user ? (
                             <div>
-                                <p className="mb-4 comentarioT">Hi, {user.displayName}!</p> 
+                                <p className="mb-4">Hi, {user.displayName}!</p> 
                             </div>
                         ) : (
-                            <div className='ms-5'>
+                            <div>
                                 <h1 className='my-5 loginH1'>Welcome back!</h1>
-                                <form  className="my-3 row">                
-                                    <div class="col-12 mt-4 p-0">
-                                        <label for="email" class="form-label formTitulo">E-mail</label>
-                                        <input type="email" class="form-control formStyl" id="email"/>
-                                        <div class="invalid-feedback">
-                                            Necessário um e-mail válido.
-                                        </div>
+                                <form className="my-3 row" onSubmit={handleSubmit}>
+                                    <div className="col-12 mt-4 p-0">
+                                        <label htmlFor="email" className="form-label formTitulo">E-mail</label>
+                                        <input type="email" className="form-control formStyl" id="email" name="email" onChange={handleChange} required />
                                     </div>
-                                    <div class="col-12 mt-4 p-0">
-                                        <label for="email" class="form-label formTitulo">Password</label>
-                                        <input type="email" class="form-control formStyl" id="senha"s/>
+
+                                    <div className="col-12 mt-4 p-0">
+                                        <label htmlFor="senha" className="form-label formTitulo">Password</label>
+                                        <input type="password" className="form-control formStyl" id="senha" name="password" onChange={handleChange} required />
                                     </div>
+
+                                    {error && <p className="text-danger mt-2">{error}</p>}
+
                                     <button type="submit" className="botaoForm mt-4">Log in</button>
-                                    <SignIn></SignIn>
+                                    <SignIn />
                                 </form>
+
                                 <p>Don’t have an account?<Link to='/register' className='ms-1'>Sign up</Link></p>                           
                             </div>
                         )}
